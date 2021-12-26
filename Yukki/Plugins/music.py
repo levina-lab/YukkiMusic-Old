@@ -52,21 +52,20 @@ def time_to_seconds(time):
     )
 
 
-@Client.on_message(command(["play", "play@VeezMegaBot"]) & other_filters)
+@Client.on_message(command(["play", "play@MentosMusicBot"]))
 async def play(_, message: Message):
-    await message.delete()
     chat_id = message.chat.id
-    if not await is_served_chat(chat_id):
-        await message.reply_text(f"❌ **not in allowed chat**\n\nveez mega is only for allowed chats. ask any sudo user to allow your chat.\n\ncheck sudo user list [From Here](https://t.me/{BOT_USERNAME}?start=sudolist)")
-        return await app.leave_chat(chat_id)  
+#   if not await is_served_chat(chat_id):
+#        await message.reply_text(f"**__Not in allowed chats.__**\n\nMusic Private is only for allowed chats. Ask any Sudo User to allow your chat.\nCheck Sudo Users List [From Here](https://t.me/{BOT_USERNAME}?start=sudolist)")
+#        return await app.leave_chat(chat_id)  
     if message.sender_chat:
-        return await message.reply_text("you're an __Anonymous__ Admin !\n\n» revert back to user account from admin rights.")  
+        return await message.reply_text("You're an __Anonymous Admin__!\nRevert back to User Account From Admin Rights.")  
     user_id = message.from_user.id
     chat_title = message.chat.title
     username = message.from_user.first_name
     checking = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
     if await is_on_off(1):
-        LOG_ID = "-1001306851903"
+        LOG_ID = "-1001429892362"
         if int(chat_id) != int(LOG_ID):
             return await message.reply_text("» bot is under maintenance, sorry for the inconvenience!")
         return await message.reply_text("» bot is under maintenance, sorry for the inconvenience!")
