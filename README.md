@@ -1,8 +1,8 @@
 This is a Old Yukki Music source code, newest version is placed here: https://github.com/NotReallyShikhar/YukkiMusicBot
 
-Full Credit is gived to [@TeamYukki](https://t.me/OfficialYukki)
+Full Credit is given to [@TeamYukki](https://t.me/OfficialYukki)
 
-Don't ask about is clone / kang or not, Use your mind to know about it !
+Don't ask about is it a clone / kang or not, Use your mind to know about it !
 
 ### String Session
 
